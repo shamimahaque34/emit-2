@@ -32,6 +32,13 @@ class PageController extends Controller
     {
         Page::create([
             'title' => $request->input('title'),
+            'is_remote' => $request->input('is_remote'),
+            'posting_title' => $request->input('posting_title'),
+            'date_opened' => $request->input('date_opened'),
+            'job_description' => $request->input('job_description'),
+            'work_experience' => $request->input('work_experience'),
+            'job_type' => $request->input('job_type'),
+            'apply_link' => $request->input('apply_link'),
             'slug' => $request->input('slug'),
             'content' => $request->input('content'),
 
@@ -75,6 +82,13 @@ class PageController extends Controller
         // Update the page
         $page->update([
             'title' => $request->input('title'),
+            'is_remote' => $request->input('is_remote'),
+            'posting_title' => $request->input('posting_title'),
+            'date_opened' => $request->input('date_opened'),
+            'job_description' => $request->input('job_description'),
+            'work_experience' => $request->input('work_experience'),
+            'job_type' => $request->input('job_type'),
+            'apply_link' => $request->input('apply_link'),
             'slug' => $request->input('slug'),
             'content' => $request->input('content'),
 
